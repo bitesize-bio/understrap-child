@@ -1,0 +1,18 @@
+/* Error: Undefined variable.
+ *    ,
+ * 39 | $secondary:     $gray-600 !default;
+ *    |                 ^^^^^^^^^
+ *    '
+ *   theme\_child_theme_variables.scss 39:17  @import
+ *   custom-editor-style.scss 4:9             root stylesheet */
+
+body::before {
+  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
+      "Droid Sans Mono", monospace, monospace;
+  white-space: pre;
+  display: block;
+  padding: 1em;
+  margin-bottom: 1em;
+  border-bottom: 2px solid black;
+  content: "Error: Undefined variable.\a    \2577 \a 39 \2502  $secondary:     $gray-600 !default;\a    \2502                  ^^^^^^^^^\a    \2575 \a   theme\\_child_theme_variables.scss 39:17  @import\a   custom-editor-style.scss 4:9             root stylesheet";
+}

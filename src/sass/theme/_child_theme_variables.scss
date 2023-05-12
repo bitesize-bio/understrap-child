@@ -2,6 +2,63 @@
 // To overwrite a Bootstrap variable you don´t have to touch the Bootstrap folder.
 // Just copy a variable from src/sass/assets/bootstrap5/_variables.scss, paste it here and edit the value.
 
+//Branded variables
+$bio-primary-lighter: #f5b283;
+$bio-primary-light: #f18c45;
+$bio-primary: #ec6607;
+$bio-primary-dark: #b14c05;
+$bio-primary-darker: #763304;
+$bio-white: #ffffff;
+$bio-secondary-lighter: #7fd7bd;
+$bio-secondary-light: #40c49c;
+$bio-secondary: #00b07b;
+$bio-secondary-dark: #00845c;
+$bio-secondary-darker: #00583e;
+$bio-off-white: #f5f5f5;
+$bio-tertiary-lighter: #9ebfff;
+$bio-tertiary-light: #6e9fff;
+$bio-tertiary: #3e7fff;
+$bio-tertiary-dark: #2e5fbf;
+$bio-tertiary-darker: #1f4080;
+$bio-black: #000000;
+$bio-grey-lighter: #d6d6d6;
+$bio-grey-light: #c2c2c2;
+$bio-grey: #adadad;
+$bio-grey-dark: #777777;
+$bio-grey-darker: #525252;
+$bio-off-black: #1f1f1f;
 
-$purple: #5533ff; // Thats a sample how you could change a BootStrap variable.
-$primary: $purple;  // Once we've changed the value, we'll also make it the primary brand color.
+$bio-sans: Poppins, "Helvetica Neue", Arial, Roboto, system-ui, -apple-system, "Segoe UI", "Noto Sans", "Liberation Sans", sans-serif;
+$bio-serif: Neuton, Georgia, Georgia, Times, "Times New Roman", serif;
+
+//End Branded variables
+
+
+//Mapping branded variables to theme.
+$primary:       $bio-primary;
+$secondary:     $bio-secondary;
+$tertiary:      $bio-tertiary;
+$success:       $bio-primary;
+$info:          $bio-secondary;
+$warning:       $bio-tertiary;
+$danger:        $bio-secondary;
+$light:         $bio-grey-light;
+$dark:          $bio-grey-darker;
+
+
+
+$theme-colors: (
+        "primary":    $primary,
+        "secondary":  $secondary,
+        "success":    $success,
+        "info":       $info,
+        "warning":    $warning,
+        "danger":     $danger,
+        "light":      $light,
+        "dark":       $dark
+) !default;
+
+$font-family-sans-serif: $bio-sans;
+//No serif font in BS by default. Adding here so it can be mapped properly
+$font-family-serif: $bio-serif;
+
